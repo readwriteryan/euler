@@ -1,0 +1,1 @@
+puts (1..1000).map{ |current| current ** current}.inject(:+).to_s[-10,10]

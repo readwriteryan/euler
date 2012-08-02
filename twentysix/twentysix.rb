@@ -1,0 +1,1 @@
+puts (0..1000).map{|number| (1..number).detect(lambda {0}){|test| 10**test % number == 1}}.each_with_index.max

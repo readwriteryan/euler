@@ -1,0 +1,8 @@
+require "prime"
+generator	= Prime::EratosthenesGenerator.new
+
+primes = [generator.next]
+
+while primes.count < 10000
+    primes << generator.next
+end

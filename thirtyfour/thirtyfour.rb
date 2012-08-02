@@ -1,0 +1,1 @@
+puts (3..50000).select{ |number| ((number.to_s.split('').map{|digit|(1..digit.to_i).inject(1, :*)}).compact.inject(:+)) == number}.inspect

@@ -1,0 +1,1 @@
+puts (2..100).map{ |a| (2..100).map {|b|  (a**b).to_s.split('').map(&:to_i).inject(:+) }.max }.max
